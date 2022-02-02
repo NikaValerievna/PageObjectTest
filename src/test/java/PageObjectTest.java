@@ -35,7 +35,7 @@ public class PageObjectTest {
         header.logoutFromHeader();
 
         //Assert
-        homePage.shouldHaveButton("Guest log in");
+        homePage.haveGuestLoginButton();
     }
 
     @Test
@@ -49,6 +49,6 @@ public class PageObjectTest {
         sidebarMenu.logoutFromSidebarMenu();
 
         //Assert
-        homePage.shouldHaveButton("Guest log in");
+        homePage.haveGuestLoginButton();
     }
 }

@@ -22,7 +22,7 @@ public class HomePage extends BasePage{
         Selenide.$(By.xpath("//*[text()='Login']")).sendKeys(Keys.ENTER);
         return new GaragePage();
     }
-    public void shouldHaveButton(String text) {
-        Selenide.$(By.cssSelector("button[class='header-link -guest']")).shouldHave(Condition.text(text));
+    public void haveGuestLoginButton() {
+                Selenide.$(By.cssSelector("button[class='header-link -guest']")).shouldBe(Condition.visible);
     }
 }
