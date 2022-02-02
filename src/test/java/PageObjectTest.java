@@ -50,6 +50,5 @@ public class PageObjectTest {
 
         //Assert
         homePage.haveGuestLoginButton();
-
     }
 }
