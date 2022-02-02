@@ -24,5 +24,6 @@ public class HomePage extends BasePage{
     }
     public void haveGuestLoginButton() {
                 Selenide.$(By.cssSelector("button[class='header-link -guest']")).shouldBe(Condition.visible);
+
     }
 }
